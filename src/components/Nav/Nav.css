@@ -1,0 +1,38 @@
+.nav {
+	background: var(--dim-white);
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.nav-container {
+	/*display: flex;
+	justify-content: space-around;
+	align-items: center;*/
+}
+.nav .nav-brand {
+	font-family: Playball;
+	letter-spacing: 1.45px;
+	font-weight: 600;
+	font-size: 34px;
+	color: var(--black-color);
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.nav .nav-right-side {
+	display: flex;
+	align-items: center;
+}
+.nav .nav-links {
+	text-transform: capitalize !important;
+	text-decoration: none;
+	color: var(--black-color);
+	font-weight: 600;
+	font-size: 16px;
+}
+.nav .nav-links:not(:last-child) {
+	margin-right: 3rem;
+}
+.nav .nav-icon {
+	font-weight: bold;
+}
