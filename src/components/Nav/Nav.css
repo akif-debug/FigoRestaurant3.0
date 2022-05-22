@@ -1,38 +1,79 @@
-.nav {
+.nav-header {
 	background: var(--dim-white);
 	height: 60px;
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-}
-.nav-container {
-	/*display: flex;
 	justify-content: space-around;
-	align-items: center;*/
 }
-.nav .nav-brand {
+.nav-header .nav-brand {
 	font-family: Playball;
-	letter-spacing: 1.45px;
+	letter-spacing: 1.55px;
 	font-weight: 600;
 	font-size: 34px;
 	color: var(--black-color);
 	text-transform: capitalize;
 	text-decoration: none;
 }
-.nav .nav-right-side {
+.nav-header nav {
 	display: flex;
 	align-items: center;
 }
-.nav .nav-links {
-	text-transform: capitalize !important;
+.nav-header .nav-links {
 	text-decoration: none;
 	color: var(--black-color);
 	font-weight: 600;
 	font-size: 16px;
 }
-.nav .nav-links:not(:last-child) {
+.nav-header .nav-links:not(:last-child) {
 	margin-right: 3rem;
 }
-.nav .nav-icon {
-	font-weight: bold;
+.nav-header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--black-color);
+	/*opacity: 0;*/
+	display: none;
+	font-size: 1.8rem;
+}
+@media(max-width: 768px) {
+	.nav-header {
+		justify-content: space-between;
+		padding: 0 2rem;
+	}
+	.nav-header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background: var(--dark-green);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+	.nav-header .nav-btn {
+		display: block;
+		/*opacity: 1;*/
+		/*visibility: visible;*/
+	}
+	.nav-header .responsive_nav	{
+		transform: none;
+	}
+	.nav-header .nav-close-btn {
+		position: absolute;
+		top: .65rem;
+		right: 2rem;
+	}
+	.nav-header .nav-links {
+		font-size: 1.5rem;
+		margin-right: 0 !important;
+	}
+
 }
