@@ -3,6 +3,7 @@
 }
 ::selection {
   background: var(--dark-green);
+  color: var(--white-color);
 }
 *::-webkit-scrollbar {
     width: .5rem;
@@ -17,14 +18,14 @@
   --white-color: #FFFFFF;
   --dim-white: #F8FBF5;
   --black-color: #2a2529;
+  --dim-black: #776f75;
   --yellow-color: #FEBD00;
   --dark-green: #59882B;
   --lite-green: #8CB560;
 }
 body {
-  margin: 0;
-  font-family: Source Sans Pro, 'serif';
+  font-family: Source Sans Pro !important;
   -webkit-font-smoothing: antialiased;
-  /*background: #000;*/
   -moz-osx-font-smoothing: grayscale;
+  /*background: #474746 !important;*/
 }

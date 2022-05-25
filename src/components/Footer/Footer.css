@@ -1,0 +1,55 @@
+#footer {
+	margin-top: 10rem;
+	background: var(--dim-white);
+	/*height: 35vh;*/
+	padding: 50px 0 30px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-container {  }
+.footer-container .footer-container_row {
+}
+.footer-container .footer-container_col li {
+	list-style: none;
+}
+.footer-container .footer-brand {
+	font-family: Playball;
+	letter-spacing: 1.55px;
+	font-weight: 600;
+	font-size: 34px;
+	cursor: pointer;
+	text-decoration: none;
+	color: transparent;
+	background: linear-gradient(to right, var(--lite-green), var(--dark-green));
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 10%;
+}
+.footer-container .footer-para {
+	padding-top: 20px;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--dim-black);
+	letter-spacing: .15px;
+}
+.footer-container .footer-icon {
+	font-size: 32px;
+	color: var(--dark-green);
+	cursor: pointer;
+} 
+.footer-container .footer-icon:not(:last-child) {
+	margin-right: 5px;
+}
+.footer-container .footer-box-heading {
+	font-size: 24px;
+	color: var(--black-color);
+	text-transform: capitalize;
+}
+.footer-container .footer-link {
+	margin: 24px 0;
+	color: var(--dim-black);
+	font-size: 19px;
+	cursor: pointer;
+}

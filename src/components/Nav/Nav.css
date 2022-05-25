@@ -1,16 +1,23 @@
 .nav-header {
-	background: var(--dim-white);
 	height: 60px;
 	display: flex;
 	align-items: center;
+	background: var(--dim-white);
 	justify-content: space-around;
+	transition: .4s ease-in-out;
+	/*box-shadow: 0 0 8px 0 rgba(89, 136, 43, .5);*/
 }
 .nav-header .nav-brand {
 	font-family: Playball;
 	letter-spacing: 1.55px;
 	font-weight: 600;
 	font-size: 34px;
-	color: var(--black-color);
+	color: transparent;
+	background: linear-gradient(to right, var(--lite-green), var(--dark-green));
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 10%;
+	cursor: pointer;
 	text-transform: capitalize;
 	text-decoration: none;
 }
@@ -34,16 +41,27 @@
 	border: none;
 	outline: none;
 	color: var(--black-color);
-	/*opacity: 0;*/
 	display: none;
 	font-size: 1.8rem;
 }
+@media(max-width: 480px) {
+	.nav-header {
+		justify-content: space-evenly;
+		padding: 0 .55rem 0 1rem !important;
+	}
+	.nav-header .nav-close-btn {
+		top: .25rem !important;
+		right: .65rem !important;
+	}
+}
+/*//////////////////////*/
 @media(max-width: 768px) {
 	.nav-header {
 		justify-content: space-between;
-		padding: 0 2rem;
+		padding: 0 1.35rem 0 2rem;
 	}
 	.nav-header nav {
+		z-index: 1000;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -54,22 +72,20 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background: var(--dark-green);
+		background: linear-gradient(to top, var(--dark-green), var(--white-color));
 		transition: 1s;
 		transform: translateY(-100vh);
 	}
 	.nav-header .nav-btn {
 		display: block;
-		/*opacity: 1;*/
-		/*visibility: visible;*/
 	}
 	.nav-header .responsive_nav	{
 		transform: none;
 	}
 	.nav-header .nav-close-btn {
 		position: absolute;
-		top: .65rem;
-		right: 2rem;
+		top: .35rem;
+		right: 1.35rem;
 	}
 	.nav-header .nav-links {
 		font-size: 1.5rem;
