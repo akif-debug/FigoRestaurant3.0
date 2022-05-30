@@ -4,8 +4,6 @@
 	align-items: center;
 	background: var(--dim-white);
 	justify-content: space-around;
-	transition: .4s ease-in-out;
-	/*box-shadow: 0 0 8px 0 rgba(89, 136, 43, .5);*/
 }
 .nav-header .nav-brand {
 	font-family: Playball;
@@ -32,7 +30,7 @@
 	font-size: 16px;
 }
 .nav-header .nav-links:not(:last-child) {
-	margin-right: 3rem;
+	margin-left: 3rem;
 }
 .nav-header .nav-btn {
 	padding: 5px;
