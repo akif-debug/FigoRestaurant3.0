@@ -9,6 +9,7 @@
 	font-family: Playball;
 	letter-spacing: 1.55px;
 	font-weight: 600;
+	z-index: 10000;
 	font-size: 34px;
 	color: transparent;
 	background: linear-gradient(to right, var(--lite-green), var(--dark-green));
@@ -41,6 +42,9 @@
 	color: var(--black-color);
 	display: none;
 	font-size: 1.8rem;
+}
+.navbar-bars {
+	color: var(--dark-green);
 }
 @media(max-width: 480px) {
 	.nav-header {
@@ -86,8 +90,9 @@
 		right: 1.35rem;
 	}
 	.nav-header .nav-links {
-		font-size: 1.5rem;
-		margin-right: 0 !important;
+		font-size: 2rem;
 	}
-
+	.nav-header .nav-links:not(:last-child) {
+		margin: 5px 0;
+	}
 }

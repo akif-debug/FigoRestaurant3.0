@@ -27,15 +27,15 @@ const Nav = () => {
 			<nav ref={navRef}>
 				<Link to='Home' className='nav-links'>Home</Link>
 				<Link to='Menu' className='nav-links'>Menu</Link>
-				<Link to='Menu' className='nav-links'>Service</Link>
+				<Link to='Menu' className='nav-links'>Service</Link>	
 				<Link to='Menu' className='nav-links'>Sign in</Link>
 				<Link to='/' className='nav-links nav-icon'><img src={bag} /></Link>
 				<button className='nav-btn nav-close-btn' onClick={showNavbar}>
-					<FaTimes/>
+					<FaTimes className='navbar-bars'/>
 				</button>
 			</nav>
 			<button className='nav-btn' onClick={showNavbar}>
-				<FaBars/>
+				<FaBars className='navbar-bars'/>
 			</button>
 		</header>
 		{/*Home-----------------------------------------------*/}

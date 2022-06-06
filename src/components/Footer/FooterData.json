@@ -1,0 +1,20 @@
+[
+	{
+		"headlink": "our menu",
+		"link1": "Lunch",
+		"link2": "Dinner",
+		"link3": "Catering"
+	},
+	{
+		"headlink": "Links",
+		"link1": "About Us",
+		"link2": "Terms of Use",
+		"link3": "Privacy Policy"
+	},
+	{
+		"headlink": "Contact",
+		"link1": "+91-9717931735",
+		"link2": "13.5coder@gmail.com",
+		"link3": "Delhi, Kashmiri Gate"
+	}
+]

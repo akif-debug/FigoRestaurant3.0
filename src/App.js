@@ -3,8 +3,6 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import 'bootstrap/dist/css/bootstrap.css'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   const [navBar, setNavBar] = useState(false);
